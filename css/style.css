@@ -268,9 +268,15 @@ a {
     padding-right: 0;
     padding-top: 10px;
   }
+  #container .article .article-entry h2 {
+    font-size: 24px;
+  }
+  #container .article .article-entry h3 {
+    font-size: 20px;
+  }
   #container .article .article-title {
-    font-size: 18px;
-    height: 28px;
+    font-size: 28px;
+    height: 30px;
     overflow: hidden;
     display: block;
     white-space: nowrap;
@@ -862,15 +868,16 @@ a {
   margin-bottom: 16px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
+  font-size: 28px;
 }
 .article-entry h3 {
   margin-top: 16px;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .article-entry h2,
 .article-entry h3 {
   font-weight: bold;
-  font-size: 28px;
   color: #574c4c;
 }
 .article-entry strong {
