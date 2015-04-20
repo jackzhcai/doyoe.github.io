@@ -181,6 +181,7 @@
 </nav>
       
   
+    
     <article id="post-css/视觉格式化模型中的各种框" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -217,6 +218,9 @@
         <p>在聊这个话题之前，我们可能得先简单说说 <code>视觉格式化模型</code> 这个概念。</p>
 <p><code>视觉格式化模型</code> 的全称是 <code>Visual formatting model</code>，它被用来描述用户代理（比如浏览器）在图形媒体下如何处理文档树。</p>
 <p>在 <code>视觉格式化模型</code> 中，每个文档树的元素会根据<a href="http://www.w3.org/TR/CSS2/box.html" target="_blank" rel="external">框模型</a>产生零到多个框（boxes）。这些框的布局取决于框的尺寸，类型，定位方式（正常流，浮动和绝对定位），元素之间的关系和外部信息（例如：视口 ① 大小，置换元素的固有尺寸等等）。</p>
+<blockquote>
+<p>举个最简单的例子来讲，假设一个页面上有2个div，那么第2个div的位置会取决第1个div的高度定义；假设更复杂一点，第1个div是浮动的，那么第2个div的位置还要取决于第1个div的宽度。</p>
+</blockquote>
 <h2 id="不同类型的框">不同类型的框</h2>
 <p>在 <code>CSS</code> 中，可能会产生不同类型的框，框的类型取决于 <code>display</code> 属性的设定。某种程度上，框的类型会影响其在视觉格式化模型中的表现。接下来会详细的聊聊这些不同类型的框以及它们在视觉可视化模型中的表现。</p>
 <p>在说这个之前，我们先回忆一下，大家常说的一些名词：</p>
@@ -230,7 +234,7 @@
     </div>
     <footer class="article-footer">
       
-      
+
     </footer>
   </div>
   
@@ -241,6 +245,7 @@
 
 
 
+    
   
   
 
