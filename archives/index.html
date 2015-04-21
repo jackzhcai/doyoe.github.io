@@ -244,36 +244,12 @@
 </blockquote>
 <p>到这里，候选人基本上不知道要怎么回答好了，最后可能会告诉我，<strong>因为 <code>img</code> 是特殊元素</strong></p>
 <p>当然，虽然这么回答也不能说是错误的，但基本上也能知道候选人对这条线的基础的掌握程度了。</p>
-<p>但我希望听到的答案是通过解释置换元素相关的概念从而给出答案。</p>
-<h2 id="什么是置换元素？">什么是置换元素？</h2>
-<p>一个 <code>内容</code> 不受CSS视觉格式化模型控制，CSS渲染模型并不考虑对此内容的渲染，且元素本身一般拥有固有尺寸（宽度，高度，宽高比例）的元素，被称之为置换元素。</p>
-<h2 id="什么是非置换元素？">什么是非置换元素？</h2>
-<p>w3c并没有给出明确的非置换元素的解释，但能确定的是除置换元素之外，所有的元素都是非置换元素。</p>
-<h2 id="置换和非置换元素的宽度定义">置换和非置换元素的宽度定义</h2>
-<p>对于行内非置换元素，宽高设置都是不适用的。</p>
-<p>对于行内置换元素来说，其宽度的设置需遵循以下几点：</p>
-<ul>
-<li>若 <code>width</code> 的计算值为 <code>auto</code> 且元素有固有宽度，则 <code>width</code> 的使用值为该固有宽度。<blockquote>
-<p>典型的例子是：<code>input</code> 当宽度的计算值为auto时，则其宽度使用值为其默认的固有宽度</p>
-</blockquote>
-</li>
-<li>如以下任一条件符合，则 <code>width</code> 的使用值为 <code>高度使用值 * 固有宽高比例</code>：<ul>
-<li><code>width</code> 和 <code>height</code> 的计算值都为 <code>auto</code> 且元素没有固有宽度，但是有固有的宽高比例；</li>
-<li><code>width</code> 的计算值为 <code>auto</code> 且 <code>height</code> 有非 <code>auto</code> 的计算值，并且元素有固有的宽高比例；<blockquote>
-<p>典型的例子：<code>img</code> 当只定义了其高度值时，其宽度将会根据固有宽高比例进行等比设置</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>除此之外，当 <code>width</code> 的计算值为 <code>auto</code> 时，则宽度的使用值为 <code>300px</code><blockquote>
-<p>典型的例子：比如iframe, canvas</p>
-</blockquote>
-</li>
-</ul>
-<p><strong>需要说明的是行内置换元素的高度设置与宽度设置基本一致，当匹配到最后一条时，其高度的使用值不超过 <code>150px</code></strong></p>
-<p>其它类型的置换元素，其宽高的定义都参照行内置换元素的定义。</p>
-<p>待补充。。。</p>
 
+        
+          <p class="article-more-link">
+            <a href="/2015/03/15/css/置换和非置换元素/#more">more >></a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
